@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+{% load humanize %}
+{% block contents %}
+<div class="row mt-5">
+    <div class="col-12">
+        <table class="table table-light">
+            <thead class="thead-light">
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>금액</th>
+                <th>주문일자</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for item in order_list %}
+            <tr>
+                <td>{{ item.id }}</td>
+                <td><a href="/product/{{ item.product.id }}">{{ item.product.title }}</a></td>
+                <td>{{ item.quantity|intcomma }}</td>
+                <td>{{ item.amount }}</td>
+                <td>{{ item.created_at|date:'Y-m-d H:i' }}</td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
