@@ -4,7 +4,7 @@
 
 # 설치
 ```
-$ git clone https://github.com/swiftintellij/chogandan-django-shopping.git
+$ git clone THIS_REPOSITORY_CLONE_URL
 $ virtualenv venv
 $ source venv/bin/activate
 (venv) $ pip3 install -r package.txt
