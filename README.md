@@ -2,7 +2,7 @@
 
 간단한 몇 가지 기능을 확인
 
-# 설치
+## 설치
 ```
 $ git clone THIS_REPOSITORY_CLONE_URL
 $ virtualenv venv
@@ -13,4 +13,4 @@ $ source venv/bin/activate
 (venv) $ python3 manage.py runserver
 (venv) $ cat shopping/urls.py
 ```
-웹브라우저에서 URL 동작 테스트.
+## 웹브라우저에서 URL 동작 테스트.
