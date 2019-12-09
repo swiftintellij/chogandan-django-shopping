@@ -1,4 +1,4 @@
-# Django 프레임웍 테스트
+# Django 강의 따라하기
 
 간단한 CRUD, REST API
 
